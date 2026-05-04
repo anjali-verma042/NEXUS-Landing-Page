@@ -70,7 +70,7 @@ cd NEXUS-Landing-Page
 ## 📬 Contact
 
 👩‍💻 **Anjali Verma**
-📧 Email: [your-email@gmail.com](mailto:your-email@gmail.com)
+📧 Email: [anjali43bca@gmail.com](mailto:anjali43bca@gmail.com)
 🔗 GitHub: https://github.com/anjali-verma042
 
 ---

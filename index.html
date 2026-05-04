@@ -1,0 +1,406 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus - Modern Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Work+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav>
+    <div class="logo">NEXUS</div>
+    <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- Hero Slider -->
+<div class="slider-container" id="home">
+    <!-- Slide 1 -->
+    <div class="slide active">
+        <div class="slide-content">
+            <div class="slide-text">
+                <h1>Elevate Your Digital Presence</h1>
+                <p>Transform your vision into reality with cutting-edge design solutions that captivate and inspire. We create experiences that resonate.</p>
+                <a href="#contact" class="cta-button">Get Started</a>
+            </div>
+            <div class="slide-image">
+                <div class="image-wrapper">
+                    <div class="image-overlay">01</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="slide">
+        <div class="slide-content">
+            <div class="slide-text">
+                <h1>Innovation Meets Creativity</h1>
+                <p>Discover the perfect blend of technology and artistry. Our team brings your ideas to life with unmatched precision and passion.</p>
+                <a href="#contact" class="cta-button">Learn More</a>
+            </div>
+            <div class="slide-image">
+                <div class="image-wrapper">
+                    <div class="image-overlay">02</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="slide">
+        <div class="slide-content">
+            <div class="slide-text">
+                <h1>Design Without Boundaries</h1>
+                <p>Push the limits of what's possible. We craft digital experiences that break conventions and set new standards in excellence.</p>
+                <a href="#contact" class="cta-button">Explore Now</a>
+            </div>
+            <div class="slide-image">
+                <div class="image-wrapper">
+                    <div class="image-overlay">03</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slider Controls -->
+    <div class="slider-controls">
+        <button class="control-btn" onclick="prevSlide()">←</button>
+        <button class="control-btn" onclick="nextSlide()">→</button>
+    </div>
+
+    <!-- Slider Indicators -->
+    <div class="slider-indicators">
+        <div class="indicator active" onclick="goToSlide(0)"></div>
+        <div class="indicator" onclick="goToSlide(1)"></div>
+        <div class="indicator" onclick="goToSlide(2)"></div>
+    </div>
+</div>
+
+<!-- Features Section -->
+<section class="features" id="services">
+    <h2 class="section-title">What We Offer</h2>
+    <div class="features-grid">
+        <div class="feature-card">
+            <div class="feature-icon">✦</div>
+            <h3>Brand Identity</h3>
+            <p>Create a lasting impression with sophisticated brand design that tells your unique story and connects with your audience.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">◆</div>
+            <h3>Web Development</h3>
+            <p>Build powerful, responsive websites that deliver exceptional user experiences across all devices and platforms.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">●</div>
+            <h3>Digital Strategy</h3>
+            <p>Navigate the digital landscape with data-driven strategies that drive growth and maximize your online presence.</p>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section class="about" id="about">
+    <div class="about-container">
+        <div class="about-image">
+            <div class="about-img-wrapper">
+                <div class="about-overlay">NEXUS</div>
+            </div>
+        </div>
+        <div class="about-content">
+            <span class="about-label">About Us</span>
+            <h2>Crafting Digital Excellence Since 2015</h2>
+            <p>We are a collective of designers, developers, and strategists who believe in the power of exceptional digital experiences. Our mission is to transform ideas into immersive realities that captivate audiences and drive meaningful results.</p>
+            <p>With over a decade of combined expertise, we've partnered with forward-thinking brands across industries to create digital solutions that don't just meet expectations—they exceed them. Our approach combines creative innovation with technical precision, ensuring every project we undertake is executed flawlessly.</p>
+            <div class="about-stats">
+                <div class="stat-item">
+                    <h3>200+</h3>
+                    <p>Projects Completed</p>
+                </div>
+                <div class="stat-item">
+                    <h3>50+</h3>
+                    <p>Happy Clients</p>
+                </div>
+                <div class="stat-item">
+                    <h3>15+</h3>
+                    <p>Awards Won</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Process Section -->
+<section class="process">
+    <h2 class="section-title dark">Our Creative Process</h2>
+    <div class="process-grid">
+        <div class="process-step">
+            <div class="step-number">01</div>
+            <h3>Discovery</h3>
+            <p>We begin by immersing ourselves in your brand, understanding your goals, audience, and market landscape. This foundational phase ensures we're aligned with your vision from the start.</p>
+        </div>
+        <div class="process-step">
+            <div class="step-number">02</div>
+            <h3>Strategy</h3>
+            <p>Armed with insights, we develop a comprehensive strategy that outlines the roadmap to success. Every decision is data-driven and purposeful, setting the stage for impactful design.</p>
+        </div>
+        <div class="process-step">
+            <div class="step-number">03</div>
+            <h3>Design</h3>
+            <p>This is where creativity meets precision. Our designers craft stunning visuals that not only look beautiful but serve a strategic purpose, ensuring form and function work in harmony.</p>
+        </div>
+        <div class="process-step">
+            <div class="step-number">04</div>
+            <h3>Development</h3>
+            <p>Our developers bring designs to life with clean, efficient code. We build with scalability and performance in mind, creating solutions that stand the test of time.</p>
+        </div>
+        <div class="process-step">
+            <div class="step-number">05</div>
+            <h3>Launch</h3>
+            <p>The moment of truth. We ensure a smooth launch with rigorous testing and optimization, making sure every element performs flawlessly across all platforms and devices.</p>
+        </div>
+        <div class="process-step">
+            <div class="step-number">06</div>
+            <h3>Growth</h3>
+            <p>Our partnership doesn't end at launch. We provide ongoing support, analytics, and optimization to ensure your digital presence continues to evolve and thrive.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Portfolio Section -->
+<section class="portfolio">
+    <h2 class="section-title dark">Featured Work</h2>
+    <div class="portfolio-grid">
+        <div class="portfolio-item">
+            <div class="portfolio-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                <div class="portfolio-overlay">
+                    <h3>Luxe Fashion Brand</h3>
+                    <p>Brand Identity • Web Design</p>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-item">
+            <div class="portfolio-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                <div class="portfolio-overlay">
+                    <h3>Tech Startup Platform</h3>
+                    <p>UX/UI Design • Development</p>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-item">
+            <div class="portfolio-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                <div class="portfolio-overlay">
+                    <h3>E-commerce Solution</h3>
+                    <p>Full Stack Development</p>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-item">
+            <div class="portfolio-image" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+                <div class="portfolio-overlay">
+                    <h3>Creative Agency Site</h3>
+                    <p>Web Design • Animation</p>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-item">
+            <div class="portfolio-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                <div class="portfolio-overlay">
+                    <h3>Mobile App Design</h3>
+                    <p>UX Design • Prototyping</p>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-item">
+            <div class="portfolio-image" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);">
+                <div class="portfolio-overlay">
+                    <h3>Corporate Website</h3>
+                    <p>Web Development • CMS</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="testimonials">
+    <h2 class="section-title">What Clients Say</h2>
+    <div class="testimonials-grid">
+        <div class="testimonial-card">
+            <div class="quote-icon">"</div>
+            <p class="testimonial-text">Working with Nexus was transformative for our brand. They didn't just design a website—they created an experience that truly resonates with our audience. The attention to detail and creative vision exceeded all expectations.</p>
+            <div class="testimonial-author">
+                <h4>Sarah Mitchell</h4>
+                <span>CEO, Luxe Fashion</span>
+            </div>
+        </div>
+        <div class="testimonial-card">
+            <div class="quote-icon">"</div>
+            <p class="testimonial-text">The team's expertise in both design and development is unmatched. They delivered a platform that's not only beautiful but also incredibly functional and scalable. Our user engagement has increased by 200% since launch.</p>
+            <div class="testimonial-author">
+                <h4>Michael Chen</h4>
+                <span>Founder, TechVenture</span>
+            </div>
+        </div>
+        <div class="testimonial-card">
+            <div class="quote-icon">"</div>
+            <p class="testimonial-text">From concept to execution, Nexus demonstrated professionalism and creativity at every step. They took the time to understand our vision and brought it to life in ways we couldn't have imagined. Highly recommended!</p>
+            <div class="testimonial-author">
+                <h4>Emily Rodriguez</h4>
+                <span>Marketing Director, Global Corp</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Stats Section -->
+<section class="stats-section">
+    <div class="stats-container">
+        <div class="stat-box">
+            <h2>98%</h2>
+            <p>Client Satisfaction Rate</p>
+        </div>
+        <div class="stat-box">
+            <h2>150K+</h2>
+            <p>Lines of Code Written</p>
+        </div>
+        <div class="stat-box">
+            <h2>24/7</h2>
+            <p>Support Available</p>
+        </div>
+        <div class="stat-box">
+            <h2>10+</h2>
+            <p>Years Experience</p>
+        </div>
+    </div>
+</section>
+
+<!-- Team Section -->
+<section class="team">
+    <h2 class="section-title dark">Meet Our Team</h2>
+    <div class="team-grid">
+        <div class="team-member">
+            <div class="member-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                <div class="member-overlay">JD</div>
+            </div>
+            <h3>James Davidson</h3>
+            <p>Creative Director</p>
+        </div>
+        <div class="team-member">
+            <div class="member-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                <div class="member-overlay">AL</div>
+            </div>
+            <h3>Alex Liu</h3>
+            <p>Lead Developer</p>
+        </div>
+        <div class="team-member">
+            <div class="member-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                <div class="member-overlay">SP</div>
+            </div>
+            <h3>Sophie Parker</h3>
+            <p>UX Designer</p>
+        </div>
+        <div class="team-member">
+            <div class="member-image" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+                <div class="member-overlay">MK</div>
+            </div>
+            <h3>Marcus King</h3>
+            <p>Brand Strategist</p>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="contact" id="contact">
+    <div class="contact-container">
+        <div class="contact-info">
+            <h2>Let's Create Something Amazing</h2>
+            <p>Ready to elevate your digital presence? Get in touch with us today and let's discuss how we can bring your vision to life.</p>
+            <div class="contact-details">
+                <div class="contact-item">
+                    <h4>Email</h4>
+                    <p>hello@nexusagency.com</p>
+                </div>
+                <div class="contact-item">
+                    <h4>Phone</h4>
+                    <p>+1 (555) 123-4567</p>
+                </div>
+                <div class="contact-item">
+                    <h4>Location</h4>
+                    <p>123 Design Street, Creative City, CA 90210</p>
+                </div>
+            </div>
+        </div>
+        <div class="contact-form">
+            <form>
+                <div class="form-group">
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Subject">
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Your Message" rows="6" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3 class="footer-logo">NEXUS</h3>
+            <p>Creating digital experiences that inspire and engage. Let's build something extraordinary together.</p>
+        </div>
+        <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Services</h4>
+            <ul>
+                <li><a href="#">Brand Identity</a></li>
+                <li><a href="#">Web Development</a></li>
+                <li><a href="#">Digital Strategy</a></li>
+                <li><a href="#">UX/UI Design</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Follow Us</h4>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+                <a href="#">LinkedIn</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 Nexus Agency. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

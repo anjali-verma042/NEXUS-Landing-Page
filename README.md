@@ -43,7 +43,7 @@ NEXUS-Landing-Page/
 
 ## 📸 Preview
 
-(Add your project screenshot here)
+<img width="1899" height="912" alt="Screenshot 2026-05-09 115745" src="https://github.com/user-attachments/assets/47fccb53-5d2b-4581-9eca-6659ae5ea232" />
 
 ---
 
